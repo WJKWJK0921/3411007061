@@ -8,17 +8,97 @@
     <style>
         .box{
             display:inline-block ;
-            width: 100px;
-            height: 100px;
+            width:100px;
+            height:100px;
             background-color: red;
             color: white;
+        }
+        /* 相對位置 */
+        #box2{
+            position: relative;
+            top:20px;
+            left:20px;
+            background-color: blue;
+        }
+        /* 絕對位置 */
+        #box3{
+            position: absolute;
+            top:180px;
+            left:20px;
+            background-color: green;
+        }
+
+        /* 浮動 */
+        .title{
+            border:1px solid；
+            heigh:150px
+            }
+        .left{
+            float: left;
+            background-color: red;
+            width: 50px;
+            height: 150px;
+        }
+        .right{
+            float: right;
+            background-color: blue;
+            width: 50px;
+            height: 150px;
+        }    
+        /* z-index */
+        .img{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index:-1;
+        }
+         /* .overflow{ */
+            .overflow{
+            border: 1px solid;
+            height: 100px;
+            width: 200px;
+            overflow: scroll;
         }
     </style>
 </head>
 <body>
+    <!--z-index-->
+    <div>
+        123
+        <img class="img" src="https://fakeimg.pl/100x100/">
+    </div>
+    <br><br><br>
+    <br><br><br>
     <div class="box" id="box1">box1</div>
     <div class="box" id="box2">box2</div>
     <div class="box" id="box3">box3</div>
     <div class="box" id="box4">box4</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="title">
+        <div class="left">left</div>
+        <div class="right">right</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, voluptatibus. Soluta sint id vero ullam nostrum quae, nam pariatur praesentium fuga quia tenetur officiis natus eos, exercitationem voluptatem? Eum, porro.
+        Eos cum consectetur facilis ab in explicabo illum delectus fugit praesentium hic minima nihil nam, qui sunt tenetur at sed veritatis animi sint amet sit. Ipsum non impedit a suscipit.
+        Error, minima totam? Doloribus in eum nesciunt, modi officiis dolorem qui sunt perferendis nam dignissimos nostrum possimus consectetur asperiores quo fuga nisi eveniet repellendus magnam natus blanditiis. Sit, necessitatibus ut.
+        Veniam sint praesentium quam in possimus. Neque, voluptates quod. Temporibus quas rerum ab provident aut perspiciatis ipsa praesentium exercitationem fuga sequi dolore, dolor obcaecati, id atque aspernatur minus voluptas ducimus! ipsum dolor sit. ipsum dolor sit amet consectetur adipisicing elit. Illum quos quidem minus sapiente blanditiis consectetur suscipit quibusdam laborum atque maiores sint, repellat tenetur ab quo at molestias similique rerum odit.
+        </p> 
+    </div>
+    <br>
+    <!--overflow-->
+    <div class="overflow">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt atque praesentium quos at labore ut debitis aliquam, ipsa sapiente, vel numquam eveniet dignissimos. Inventore praesentium deserunt vero vitae molestiae dolore?
+        Molestias obcaecati mollitia dolor! Minima, tempora neque amet asperiores sapiente, culpa temporibus non beatae veniam voluptas aut at eligendi consequatur, numquam provident necessitatibus? Mollitia cupiditate explicabo impedit amet atque laborum!
+        Impedit perspiciatis sed officiis laudantium asperiores nostrum mollitia eveniet necessitatibus provident eaque excepturi, repudiandae dignissimos perferendis vero at exercitationem magnam libero aspernatur voluptate minus sapiente culpa voluptatem inventore! Maiores, distinctio?
+        Eligendi molestiae voluptatibus alias deleniti sed? Aspernatur minus qui earum ex id maiores architecto culpa maxime, harum minima libero laboriosam iusto et, nulla magni totam tempore voluptates, doloribus eaque! Veritatis?
+        Nesciunt, voluptatibus voluptate? Eos, voluptas explicabo esse a, quibusdam ut, aliquam soluta quo repellendus libero recusandae nobis vitae aut facere culpa id! Similique, eius voluptates rerum ex sapiente consequatur vero?
+        Similique quia culpa iusto ex fuga expedita excepturi minus eius! Fugiat, quisquam. Dolorem veniam eum, adipisci doloremque quas vero sint ipsam commodi id, repellendus labore voluptatem itaque atque voluptates ipsum!
+        Ut nemo provident aperiam libero, suscipit voluptates, maiores molestias assumenda veritatis laboriosam fuga ipsum possimus distinctio soluta iste minima itaque labore magnam inventore velit consectetur fugit? Sed consequuntur repudiandae illum!
+        Obcaecati dolorum voluptatum quos eum alias corporis quo distinctio, earum blanditiis amet dolores facere vero, eligendi saepe odio suscipit reprehenderit ea accusantium voluptatem possimus. Doloremque deleniti id sint iusto a?
+        Quos sunt, itaque doloribus maiores minus nesciunt repellendus similique impedit voluptas, ratione iusto explicabo facere deleniti minima! Excepturi maxime ipsum est quis illum corporis cumque, sit nihil saepe nemo eaque!
+        Officiis maxime possimus recusandae tempore! Voluptatum, sed minima itaque voluptas qui, quod nulla consequuntur repudiandae at, id sequi. Laborum obcaecati totam quos fugit qui cupiditate nisi pariatur illo vitae sapiente.
+    </div>
 </body>
 </html>
